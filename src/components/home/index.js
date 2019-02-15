@@ -5,6 +5,7 @@ import MeetPlayers from '../home/meetPlayers';
 import Promotion from '../home/promotion'
 
 
+
 const Home = () => {
     return (
        <div className="bck_blue">
