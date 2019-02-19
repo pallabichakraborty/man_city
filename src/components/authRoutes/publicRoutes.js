@@ -4,7 +4,7 @@ import {Route, Redirect} from 'react-router-dom';
 const publicRoutes = ({
     user,
     component:Comp,
-    ... rest
+    ...rest
 }) => {
     return (
         <Route {...rest} component={(props)=> {

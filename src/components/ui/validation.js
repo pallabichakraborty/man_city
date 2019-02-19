@@ -1,11 +1,9 @@
-import React from 'react';
-
 const validation = (props) => {
     let error=[true,''];
 
     function ValidateEmail(emailAddress) 
     {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddress))
+    if (/\S+@\S+\.\S+/.test(emailAddress))
     {
         return (true)
     }
