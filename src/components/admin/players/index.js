@@ -77,6 +77,7 @@ class Player extends Component {
                                     this.state.players
                                         .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                                         .map((player, index) => {
+
                                             return (
                                                 <TableRow key={index}>
                                                     <TableCell><Link to={`/admin_players/add_players/${player.id}`}>{player.name}</Link></TableCell>
