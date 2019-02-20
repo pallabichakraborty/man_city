@@ -13,6 +13,8 @@ import AdminMatches from './components/admin/match';
 import AddEditMatches from './components/admin/match/addEditMatches';
 import Players from './components/admin/players';
 import AddEditPlayers from './components/admin/players/addEditPlayers';
+import TheTeam from './components/theTeam';
+import Matches from './components/matches'
 
 
 const Routes = (props) => {
@@ -34,6 +36,9 @@ const Routes = (props) => {
 
             <PublicRoutes {...props} restricted={true} path="/sign_in" exact component={Signin} />
             <PublicRoutes {...props} restricted={false} path="/" exact component={Home} />
+            <PublicRoutes {...props} restricted={false} path="/the_team" exact component={TheTeam} />
+            <PublicRoutes {...props} restricted={false} path="/the_matches" exact component={Matches} />
+
 
 
         </Switch>
